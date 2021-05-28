@@ -1,0 +1,37 @@
+Webpack y Babel:
+
+    Conceptos:
+        Transpilar:
+            Operación entre compilado y traducción, del código con versiones superiores de Js
+            (o supersets de Javascript como TypeScript)
+            y transformarlo en código compatible con todos los navegadores del mercado.
+
+    Webpack y Babel:
+        Para transpilar código Js moderno y adaptarlo a cualquier navegador
+
+    Steps:
+        1:
+            Loader:
+                npm i -D babel-loader,
+        2:
+            Babel 6:
+                npm i -D babel-core
+            Babel 7:
+                npm install -D @babel/core
+        3:
+            webpack.config.js
+        4:
+            Configurar Babel en el proyecto:
+                preset: indica versión de nuestro código (ES2015, ES2016 y ES2017, todo junto)
+                    Babel 6: npm i -D babel-preset-env
+                    Babel 7: npm i -D @babel/preset-env
+        5:
+            Configurar preset con ".babelrc" en la raiz:
+                Babel 6: { "presets": ["env"] },
+                Babel 7: { "presets": ["@babel/preset-env"] }
+        6:
+            Agregar servidor webpack y su configuración en el json y webpack.config:
+                npm i webpack-dev-server
+
+            Generar automaticamente el html:
+                npm i html-webpack-plugin

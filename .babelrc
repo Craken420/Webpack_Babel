@@ -1,0 +1,15 @@
+{
+    "presets": [[
+        "@babel/preset-env",
+        {
+            "targets": { // Navegadores a los que nos dirigimos
+            "browsers": [
+                ">=1%", // Compila código y da soporte a navegadores de cuota de uso de 1% o mas.
+                //"not ie 11", // No compiles para Internet Explorer 11
+                "not op_mini all" // No compiles para Opera mini, esta en desuso
+            ]
+        },
+            "debug": true
+        }
+    ]]
+}
